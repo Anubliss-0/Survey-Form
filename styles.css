@@ -1,0 +1,68 @@
+:root {
+    box-sizing: border-box;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    display: grid;
+    background-image: url(https://picsum.photos/2000/2000);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    grid-template-areas: "header"
+                         "survey";    
+    justify-items: center;
+}
+
+.header {
+    grid-area: header;
+    color: white;
+    text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
+}
+
+form {
+    background: hsla(240, 5%, 4%, 0.7);    
+    border-radius: 8px;    
+    grid-area: survey;    
+    padding: 20px 30px;
+    width: 70%;
+    max-width: 600px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+textarea {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.question {
+    padding: 10px 0;
+}
+
+#name, #email, #number, #dropdown {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    height: 2.7778rem;
+    background-color: green;
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+}
+
+

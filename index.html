@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Toms form" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Anubliss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 id="title">FreeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </div>
+
+    <form id="survey-form">
+      <div class="question">
+        <label id="name-label" for="user-name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="user-name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div class="question">
+        <label id="email-label" for="email-address">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email-address"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="question">
+        <label id="number-label" for="age">Age</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          placeholder="Age"
+          min="1"
+          max="150"
+        />
+      </div>
+
+      <div class="question">
+        <label id="dropdown-label" for="role"
+          >Which option best describes your current role?</label
+        >
+        <select id="dropdown" name="role" required>
+          <option disabled="" selected="" value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="full time job">Full Time Job</option>
+          <option value="full time learner">Full Time Learner</option>
+          <option value="prefer not to say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <div>
+          <p>Would you reccomend FreeCodeCamp to others?</p>
+
+          <input
+            type="radio"
+            id="definitely"
+            name="reccomend"
+            value="definitely"
+          />
+          <label for="definitely">Definitely</label>
+        </div>
+
+        <div>
+          <input type="radio" id="maybe" name="reccomend" value="maybe" />
+          <label for="maybe">Maybe</label>
+        </div>
+
+        <div>
+          <input type="radio" id="not-sure" name="reccomend" value="not-sure" />
+          <label for="not-sure">Not sure</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>
+          What kind of projects are you interested in?
+          <span>(Check all that apply)</span>
+        </p>
+        <div>
+          
+          <input type="checkbox" id="front-end" value="attribute" />
+          <label for="front-end">Front-end Projects</label>
+        </div>
+        <div>
+          
+          <input type="checkbox" id="back-end" value="attribute" />
+          <label for="back-end">Back-end Projects</label>
+        </div>
+        
+        <input type="checkbox" id="another" value="attribute" />
+        <label for="another">Another option</label>
+      </div>
+
+      <div class="question">
+        <label for="comments">Any comments or selections?</label>
+        <div>
+          <textarea id="comments" name="comments">Enter your comment here.</textarea
+          >
+        </div>
+      </div>
+      <button type="submit" id="submit">Submit Answers</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
